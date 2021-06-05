@@ -40,6 +40,30 @@ LOCK TABLES `frog` WRITE;
 INSERT INTO `frog` VALUES (1,0),(2,0),(3,1);
 /*!40000 ALTER TABLE `frog` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `salmon`
+--
+
+DROP TABLE IF EXISTS `salmon`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `salmon` (
+  `id` int NOT NULL,
+  `type` varchar(64) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `salmon`
+--
+
+LOCK TABLES `salmon` WRITE;
+/*!40000 ALTER TABLE `salmon` DISABLE KEYS */;
+INSERT INTO `salmon` VALUES (1,'Coho'),(2,'Masu'),(3,'Chum');
+/*!40000 ALTER TABLE `salmon` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -50,4 +74,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-05 16:13:48
+-- Dump completed on 2021-06-05 16:23:32
