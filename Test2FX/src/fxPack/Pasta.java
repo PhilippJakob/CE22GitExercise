@@ -1,5 +1,6 @@
 package fxPack;
 
-public class Pasta {
+public class Pasta 
+{
 
 }
