@@ -1,6 +1,8 @@
+CREATE DATABASE  IF NOT EXISTS `db_learningspaces_exercise` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `db_learningspaces_exercise`;
 -- MySQL dump 10.13  Distrib 8.0.22, for Win64 (x86_64)
 --
--- Host: localhost    Database: db_egit_start
+-- Host: localhost    Database: db_learningspaces_exercise
 -- ------------------------------------------------------
 -- Server version	8.0.22
 
@@ -96,4 +98,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-07 17:09:19
+-- Dump completed on 2021-06-13 12:37:09
