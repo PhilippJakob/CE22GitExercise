@@ -56,7 +56,7 @@ CREATE TABLE `salmon` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `salmon`
+-- Dumping data for table `salmon`Wanja
 --
 
 LOCK TABLES `salmon` WRITE;
