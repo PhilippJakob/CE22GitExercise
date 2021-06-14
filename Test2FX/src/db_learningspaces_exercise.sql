@@ -42,6 +42,32 @@ INSERT INTO `frog` VALUES (1,0),(2,0),(3,1);
 UNLOCK TABLES;
 
 --
+-- Table structure for table `reservierung`
+--
+
+DROP TABLE IF EXISTS `reservierung`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `reservierung` (
+  `id` int NOT NULL,
+  `raumid` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `roomid_idx` (`raumid`),
+  CONSTRAINT `roomid` FOREIGN KEY (`raumid`) REFERENCES `room` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `reservierung`
+--
+
+LOCK TABLES `reservierung` WRITE;
+/*!40000 ALTER TABLE `reservierung` DISABLE KEYS */;
+INSERT INTO `reservierung` VALUES (1,3);
+/*!40000 ALTER TABLE `reservierung` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `room`
 --
 
@@ -98,4 +124,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-13 15:39:45
+-- Dump completed on 2021-06-14 14:32:32
